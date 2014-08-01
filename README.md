@@ -1,8 +1,8 @@
 # Installation:
 
-    git clone
+    git clone git@github.com:richford/dotvim.git
 
 # Create symlinks
 
-    ln -s ~/dotfiles/vimrc ~/.vimrc
-    ln -s ~/dotfiles/gvimrc ~/.gvimrc
+    ln -s ~/.vim/vimrc ~/.vimrc
+    ln -s ~/.vim/gvimrc ~/.gvimrc
