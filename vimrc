@@ -1,3 +1,6 @@
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 "use solarized color scheme
 syntax enable
 set background=dark
