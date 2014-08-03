@@ -1,7 +1,7 @@
 call pathogen#infect()
 call pathogen#helptags()
 
-"use solarized color scheme
+" Use solarized color scheme
 syntax enable
 set background=dark
 let g:solarized_visibility="high"
@@ -102,5 +102,8 @@ if has("autocmd")
     autocmd BufNewFile,BufRead *.rss setfiletype xml
 endif
 
-" activate mouse features
+" Activate mouse features
 set mouse=a
+
+" Highlight the 80th column and beyond
+let &colorcolumn=join(range(81,999),",")
