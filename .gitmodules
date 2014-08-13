@@ -10,3 +10,6 @@
 [submodule "bundle/commentary"]
 	path = bundle/commentary
 	url = git@github.com:tpope/vim-commentary.git
+[submodule "bundle/vim-latex"]
+	path = bundle/vim-latex
+	url = git://git.code.sf.net/p/vim-latex/vim-latex
