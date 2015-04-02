@@ -147,3 +147,16 @@ set grepprg=grep\ -nH\ $*
 " 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
 " The following changes the default filetype back to 'tex':
 let g:tex_flavor='latex'
+
+"====================[ C-style Macro Editing ]==================================
+"
+" Substitutes the whitespace and \ at the end of the line with an expression 
+" which repeats a space up until column 80 and then appends a \ character. It'll 
+" append 1 space if your line is > 80 characters
+command! Macrofill %s/\s*\\$/\=repeat(' ', 80-col('.')).' \'
+
+"====================[ Case sensitive searching]================================
+"
+" Use case for searching only if any caps are used in the search
+:set ignorecase
+:set smartcase
