@@ -38,7 +38,11 @@ command! -nargs=* Unwrap set nolinebreak showbreak=
 set mouse=a
 
 " Highlight the 80th column and beyond
-set colorcolumn=81
+if exists('+colorcoumn')
+    set colorcolumn=80
+else
+    au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+endif
 
 "====================[ Highlight matches when jumping to next ]=================
 "
