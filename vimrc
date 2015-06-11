@@ -38,7 +38,7 @@ command! -nargs=* Unwrap set nolinebreak showbreak=
 set mouse=a
 
 " Highlight the 80th column and beyond
-if exists('+colorcoumn')
+if exists('+colorcolumn')
     set colorcolumn=80
 else
     au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
@@ -155,12 +155,17 @@ let g:tex_flavor='latex'
 "====================[ C-style Macro Editing ]==================================
 "
 " Substitutes the whitespace and \ at the end of the line with an expression 
-" which repeats a space up until column 80 and then appends a \ character. It'll 
-" append 1 space if your line is > 80 characters
+" which repeats a space up until column 80 and then appends a \ character. 
+" It'll append 1 space if your line is > 80 characters
 command! Macrofill %s/\s*\\$/\=repeat(' ', 80-col('.')).' \'
 
-"====================[ Case sensitive searching]================================
+"====================[ Case sensitive searching ]===============================
 "
 " Use case for searching only if any caps are used in the search
 :set ignorecase
 :set smartcase
+
+"====================[ Octodown build command ]=================================
+"
+" Use Octodown as default build command for Markdown files
+autocmd FileType markdown let b:dispatch = 'octodown --live-reload %'
