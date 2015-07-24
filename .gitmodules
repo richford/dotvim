@@ -19,3 +19,6 @@
 [submodule "bundle/vimbufsync"]
 	path = bundle/vimbufsync
 	url = https://github.com/def-lkb/vimbufsync.git
+[submodule "bundle/coquille"]
+	path = bundle/coquille
+	url = https://github.com/the-lambda-church/coquille.git
