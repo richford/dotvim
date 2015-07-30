@@ -169,3 +169,8 @@ command! Macrofill %s/\s*\\$/\=repeat(' ', 80-col('.')).' \'
 "
 " Use Octodown as default build command for Markdown files
 autocmd FileType markdown let b:dispatch = 'octodown --live-reload %'
+
+"====================[ Coquille keybindings ]===================================
+"
+" Maps Coquille commands to CoqIDE default key bindings
+au FileType coq call coquille#CoqideMapping()
