@@ -173,4 +173,7 @@ autocmd FileType markdown let b:dispatch = 'octodown --live-reload %'
 "====================[ Coquille keybindings ]===================================
 "
 " Maps Coquille commands to CoqIDE default key bindings
-au FileType coq call coquille#CoqideMapping()
+au FileType coq call coquille#FNMapping()
+map ∆ :CoqNext<CR>
+map ˚ :CoqUndo<CR>
+map ¬¬ :CoqToCursor<CR>
