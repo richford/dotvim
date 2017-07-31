@@ -23,9 +23,6 @@ set formatprg=par\ -re
 " Shortcut to rapidly toggle `set list`
 nmap <leader>l :set list!<CR>
 
-" Use the same symbols as TextMate for tabstops and EOLs
-set listchars=tab:▸\ ,eol:¬
-
 " Invisible character colors
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
@@ -177,3 +174,11 @@ au FileType coq call coquille#FNMapping()
 map ∆ :CoqNext<CR>
 map ˚ :CoqUndo<CR>
 map ¬¬ :CoqToCursor<CR>
+
+if has('gui_running')
+    " Use the same symbols as TextMate for tabstops and EOLs
+    set listchars=tab:▸\ ,eol:¬
+else
+    " Make the background transparent
+    hi Normal guibg=NONE ctermbg=NONE
+endif
