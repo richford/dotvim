@@ -12,7 +12,7 @@
 	url = git@github.com:tpope/vim-commentary.git
 [submodule "bundle/vim-latex"]
 	path = bundle/vim-latex
-	url = git://git.code.sf.net/p/vim-latex/vim-latex
+    url = git://github.com/vim-latex/vim-latex.git
 [submodule "bundle/vim-dispatch"]
 	path = bundle/vim-dispatch
 	url = git://github.com/tpope/vim-dispatch.git

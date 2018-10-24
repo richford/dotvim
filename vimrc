@@ -149,6 +149,8 @@ set grepprg=grep\ -nH\ $*
 " The following changes the default filetype back to 'tex':
 let g:tex_flavor='latex'
 
+let g:Tex_Env_figure = "\\begin{figure}[<+htpb+>]\<CR>\\centering\<CR>\\includegraphics[scale=<+scale+>]{<+fig file+>}\<CR>\\caption{<+caption text+>}\<CR>\\label{fig:<+label+>}\<CR>\\end{figure}<++>"
+
 "====================[ C-style Macro Editing ]==================================
 "
 " Substitutes the whitespace and \ at the end of the line with an expression 
