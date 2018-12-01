@@ -22,8 +22,8 @@
 [submodule "bundle/coquille"]
 	path = bundle/coquille
 	url = https://github.com/the-lambda-church/coquille.git
-[submodule "/Users/Adam/.vim/bundle/vim-enhanced-diff"]
-	path = /Users/Adam/.vim/bundle/vim-enhanced-diff
+[submodule "bundle/vim-enhanced-diff"]
+	path = bundle/vim-enhanced-diff
 	url = https://github.com/chrisbra/vim-diff-enhanced.git
 [submodule "bundle/abolish"]
 	path = bundle/abolish

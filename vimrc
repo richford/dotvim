@@ -20,6 +20,9 @@ set hlsearch
 " Use par for text formatting
 set formatprg=par\ -re
 
+" Use system keyboard
+set clipboard+=unnamed
+
 " Shortcut to rapidly toggle `set list`
 nmap <leader>l :set list!<CR>
 
